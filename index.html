@@ -8,8 +8,132 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <p>TEST</p>
+
+    <!-- Header -->
+    <header id="header-long" class="grid-con">       
+        <div id="logo" class="box col-start-1 col-end-2 m-col-span-full l-col-start-1 l-col-end-2">
+            <img src="images/logo.svg" alt="logo">
+        </div>
+        <div id="menu" class="box col-start-2 col-end-5 m-col-span-full l-col-start-2 l-col-end-5" onclick="toggleMenu()">
+            <img src="images/menu.svg" alt="hamburger menu icon">
+        </div>
+        <nav id="sidebar-menu" class="grid-con m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolios.html">Portfolios</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav id="topbar-menu" >
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolios.html">Portfolios</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="grid-con">
+        <div class="box col-start-1 col-end-2 m-col-span-full l-col-span-full">
+            <h1>Hello, I'm Joy</h1>
+            <p>UI/UX Designer</p>
+                <div class="social-icons">
+                    <a href="#"><i class="icon-linkedin"></i></a>
+                    <a href="#"><i class="icon-github"></i></a>
+                    <a href="#"><i class="icon-portfolio"></i></a>
+                </div>
+            <img src="00" alt="Joy Chu Image">
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio grid-con">
+        <h2 class="box col-start-1 col-end-5 m-col-span-full l-col-span-full">Portfolios</h2>
+        
+        <div class="card col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-5">
+            <img src="00" alt="Project Image">
+            <p>Project Name</p>
+        </div>
+
+        <div class="card col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-5 l-col-end-9">
+            <img src="00" alt="Project Image">
+            <p>Project Name</p>
+        </div>
+
+        <div class="card col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-9 l-col-end-13">
+            <img src="00" alt="Project Image">
+            <p>Project Name</p>
+            </div>
+
+        <div class="card col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-1 l-col-end-5">
+            <img src="00" alt="Project Image">
+            <p>Project Name</p>
+        </div>
+        
+        <div class="box col-start-1 col-end-5 m-col-span-full l-col-span-full">
+            <a href="portfolios.html" class="button-link">MORE</a>  
+        </div>
+       
+    </section>
+
+    <!-- About Section -->
+    <section class="about grid-con">
+        <div class="box col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-5">
+            <h2>About</h2>
+            <p>Introduce myself...</p>
+            <a href="about.html" class="button-link">MORE</a> 
+        </div>
+          
+        <div class="box col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-5 l-col-end-13">
+            <video controls>
+                <source src="path-to-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact grid-con">
+        <div class="box col-start-1 col-end-5 m-col-span-full l-col-span-full">
+            <h2>Contact</h2>
+        </div>
+
+        <div class="box col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-5">
+            <img src="000" alt="contact img">
+        </div>
+       
+        <div class="box col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-5 l-col-end-13">
+            <p>E-mail: a1203544@gmail.com</p>
+            <p>Phone: 226-977-7721</p>
+            <button class="contact-btn">Send me a message</button>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="grid-con">
+        <div id="footer-logo" class="box col-start-1 col-end-2 m-col-span-full l-col-start-1 l-col-end-2">
+            <img src="images/logo.svg" alt="logo">
+        </div>
     
+        <nav id="footer-menu" class="box col-start-2 col-end-5 m-col-span-full">
+            <ul>
+                <li><a href="portfolios.html">Portfolios</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <div id="footer-copyright" class="box col-span-full">
+            <p>&copy; 2024 Joy Chu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>
