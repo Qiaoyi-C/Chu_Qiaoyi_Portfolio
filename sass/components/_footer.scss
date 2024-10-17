@@ -6,12 +6,10 @@
 }
 
 #footer-logo {
+    display: flex;
     text-align: left;
 }
 
-#footer-logo img {
-    width: 120px;
-}
 
 #footer-menu ul {
     list-style-type: none;
@@ -39,4 +37,15 @@
     font-size: 14px;
     color: #888;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #footer-menu,
+    #footer-copyright {
+        display: none;
+    }
+
+    #footer-logo {
+        justify-content: center; /* 在手機上讓 logo 居中 */
+    }
 }
