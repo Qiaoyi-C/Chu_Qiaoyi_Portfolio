@@ -10,82 +10,120 @@
 <body>
 
     <!-- Header -->
-    <header id="header-long" class="grid-con">       
-        <div id="logo" class="box col-start-1 col-end-2 m-col-span-full l-col-start-1 l-col-end-2">
-            <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
-        </div>
-        <div id="menu" class="box col-start-2 col-end-5 m-col-span-full l-col-start-2 l-col-end-5" onclick="toggleMenu()">
-            <img src="images/menu.svg" alt="hamburger menu icon">
-        </div>
-        <nav id="sidebar-menu" class="grid-con m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolios.html">Portfolios</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <nav id="topbar-menu" >
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolios.html">Portfolios</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-    <!-- Hero Section -->
-    <section class="grid-con">
-        <div class="box col-start-1 col-end-2 m-col-span-full l-col-span-full">
-            <h1>Hello, I'm Joy</h1>
-            <p>UI/UX Designer</p>
-                <div class="social-icons">
-                    <a href="#"><i class="icon-linkedin"></i></a>
-                    <a href="#"><i class="icon-github"></i></a>
-                    <a href="#"><i class="icon-portfolio"></i></a>
-                </div>
-            <img src="00" alt="Joy Chu Image">
-        </div>
-    </section>
+    <div class="header">
+        <header id="header-long" class="grid-con">       
+            <div id="logo" class="box col-start-1 col-end-2 m-col-span-full l-col-start-1 l-col-end-2">
+                <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+            </div>
+            <div id="menu" class="box col-start-2 col-end-5 m-col-span-full l-col-start-2 l-col-end-5" onclick="toggleMenu()">
+                <img src="images/menu.svg" alt="hamburger menu icon">
+            </div>
+            <nav id="sidebar-menu" class="grid-con m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolios.html">Portfolios</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <nav id="topbar-menu" >
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolios.html">Portfolios</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    
+        </header>
+    </div>
 
     <!-- About Section -->
-    <section class="about grid-con">
-        <div class="box col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-5">
-            <h2>About</h2>
-            <p>Introduce myself...</p>
-            <a href="about.html" class="button-link">MORE</a> 
-        </div>
-          
-        <div class="box col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-5 l-col-end-13">
-            <video controls>
-                <source src="path-to-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
+    <main>
+        <section id="about" class="about-section">
+          <div class="about-container grid-con">
+            <h1 class="col-span-full about" >About</h1>
+
+            <div class="about-photo col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+              <img src="images/joy.png" alt="Joy Chu">
+            </div>
+
+            <div class="about-intro col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+              
+              <p>Hello! My name is Qiaoyi, English name is Joy, and I’m a UI/UX designer driven by a passion for creating user-friendly and visually engaging designs. <br>
+                With over three years of experience in the field, I’ve honed my skills in design thinking, prototyping, and user research, working with both startups and established companies. <br>
+
+                I believe that great design not only solves problems but also tells a story, connecting users to brands in meaningful ways. <br>
+                 I’m constantly exploring new tools and techniques to elevate my work and aim to contribute to projects that inspire and make a difference.</p>
+              <a href="https://profile.indeed.com/p/qiaoyic-9vzpkc7" target="_blank" class="button-link">My Resume</a>
+            </div>
+
+          </div>
+        </section>
+    
+        <section id="what-i-do" class="what-i-do">
+            <div class="grid-con">
+                <h2 class="col-span-full about">What I Do</h2>
+
+                    <div class="skill-item col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+                    <h3>Interaction Design</h3>
+                    <p>I specialize in crafting intuitive user experiences that seamlessly connect users with digital products. By focusing on usability and accessibility, I ensure every interaction feels natural and effortless.</p>
+                    </div>
+                    <div class="skill-item col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+                    <h3>Graphic Design</h3>
+                    <p>I bring ideas to life through visually compelling designs that captivate audiences. From branding to marketing materials, I create designs that are both functional and beautiful.</p>
+                    </div>
+                    <div class="skill-item col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+                    <h3>Motion Design</h3>
+                    <p>I create dynamic animations and transitions that enhance storytelling and elevate user engagement. My motion designs aim to bring energy and personality to every project.</p>
+                    </div>
+                    <div class="skill-item col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+                    <h3>Font Development</h3>
+                    <p>I design custom typefaces and font styles that align with brand identities and enhance readability. Every font I create is tailored to fit both aesthetic and functional needs.</p>
+                    </div>
+                </div>
+      
+        </section>
+    
+        <section id="skills-tools" class="skills-tools">
+          <div class="skills-tools-container grid-con">
+            <div class="st col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+                <div class="st-title"><h2>Skills</h2></div>
+                <div class="st-content"><p>Wireframing | Prototyping | User Research | Design Thinking | Branding | Edit video</p></div>
+            </div>
+
+            <div class="st col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+                <div class="st-title"><h2>Tools</h2></div>
+                <div class="st-content"><p>Figma | Sketch | Adobe XD | Illustrator | Photoshop | Cinema 4D | After Effects | CSS | JavaScript</p></div>                          
+            </div>
+          </div>
+        </section>
+      </main>
 
     <!-- Footer -->
-    <footer id="footer" class="grid-con">
-        <div id="footer-logo" class="box col-span-full m-col-start-1 m-col-end-5 l-col-start-1 l-col-end-5">
-            <img src="images/logo.svg" alt="logo">
-        </div>
-    
-        <nav id="footer-menu" class="box m-col-start-6 m-col-end-13 l-col-start-6 l-col-end-13">
-            <ul>
-                <li><a href="portfolios.html">Portfolios</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    
-        <div id="footer-copyright" class="box col-span-full">
-            <p>&copy; 2024 Joy Chu. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <div class="footer-bk">
+        <footer id="footer" class="grid-con">
+            <div id="footer-logo" class="box col-span-full m-col-start-1 m-col-end-5 l-col-start-1 l-col-end-5">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+        
+            <nav id="footer-menu" class="box m-col-start-6 m-col-end-13 l-col-start-6 l-col-end-13">
+                <ul>
+                    <li><a href="portfolios.html">Portfolios</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        
+            <div id="footer-copyright" class="col-span-full">
+                <p>&copy; 2024 Joy Chu. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>    
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
