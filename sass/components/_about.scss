@@ -1,0 +1,40 @@
+.about{
+    color: #6C3205;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 24px;
+}
+
+.about-bk{
+    margin-bottom: 60px;
+}
+
+.about-contact{
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.about-contact p {
+    line-height: 1.6;
+}
+
+.m-title{
+    color: #6C3205;
+    font-size: 20px;
+}
+
+.tools{
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px){
+    .about-video{
+        margin-top: 40px;
+    }
+
+    .about-bt{
+        text-align: center;
+    }
+}

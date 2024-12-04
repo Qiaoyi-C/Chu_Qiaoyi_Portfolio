@@ -1,6 +1,9 @@
 @use '../abstracts' as a;
-#footer {
+.footer-bk{
     background-color: #F0D9C5;
+}
+
+#footer {
     padding: 20px;
     text-align: center;
 }
