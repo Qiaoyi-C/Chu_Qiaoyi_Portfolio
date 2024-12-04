@@ -115,3 +115,31 @@ gsap.fromTo(
     }
   );
   
+
+  // 確保 GSAP 和 ScrollTrigger 加載完成
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".about-photo", {
+    scrollTrigger: {
+        trigger: ".about-container", // 觸發動畫的容器
+        start: "top 80%", // 當容器到達 viewport 的 80% 高度時觸發
+        end: "top 50%", // 可以設定動畫範圍
+        scrub: true, // 讓動畫隨滾動
+    },
+    x: "-100%", // 從左邊滑入
+    opacity: 0, // 初始透明
+    duration: 1, // 動畫持續 1 秒
+});
+
+gsap.from(".about-intro", {
+    scrollTrigger: {
+        trigger: ".about-container",
+        start: "top 80%",
+        end: "top 50%",
+        scrub: true,
+    },
+    x: "100%", // 從右邊滑入
+    opacity: 0,
+    duration: 1,
+});
+
