@@ -1,10 +1,18 @@
-function toggleMenu() {
-    var sidebarMenu = document.getElementById('sidebar-menu');
-    sidebarMenu.classList.toggle('active'); 
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const menuIcon = document.querySelector('#menu'); // 選取漢堡圖示
+  const sidebarMenu = document.querySelector('#sidebar-menu'); // 選取側邊選單
+  const closeMenu = document.querySelector('#close-menu'); // 選取叉叉按鈕
 
+  // 點擊漢堡圖示，開啟側邊選單
+  menuIcon.addEventListener('click', () => {
+      sidebarMenu.classList.add('active');
+  });
 
-document.getElementById("sidebar-menu").addEventListener("click", toggleMenu);
+  // 點擊叉叉按鈕，關閉側邊選單
+  closeMenu.addEventListener('click', () => {
+      sidebarMenu.classList.remove('active');
+  });
+});
 
 // Scroll
 gsap.registerPlugin(ScrollTrigger);
