@@ -2,10 +2,20 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+#player-container video {
+  width: 100%;
+  height: auto; /* 保持比例 */
 }
 
 .video-controls.hidden {
   display: none;
+}
+
+video {
+  max-width: 100%; /* 保證視頻寬度不會超過父容器 */
+  margin-top: 30px;
 }
 
 .video-controls {
