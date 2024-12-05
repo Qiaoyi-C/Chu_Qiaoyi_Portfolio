@@ -4,28 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Joy Chu</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
 
     <!-- Header -->
+<div class="header">
     <header id="header-long" class="grid-con">       
         <div id="logo" class="box col-start-1 col-end-2 m-col-span-full l-col-start-1 l-col-end-2">
             <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
         </div>
-        <div id="menu" class="box col-start-2 col-end-5 m-col-span-full l-col-start-2 l-col-end-5" onclick="toggleMenu()">
+        <div id="menu" class="box col-start-2 col-end-5 m-col-span-full l-col-start-2 l-col-end-5">
             <img src="images/menu.svg" alt="hamburger menu icon">
         </div>
-        <nav id="sidebar-menu" class="grid-con m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+        <nav id="sidebar-menu" >
+            <div id="close-menu"><img src="images/close.svg" alt="close icon"></div>            
             <ul>
                 <li><a href="index.html">Home</a></li>
-<<<<<<< Updated upstream
-                <li><a href="portfolios.html">Portfolios</a></li>
-=======
-                <li><a href="portfolio.php">Portfolio</a></li>
->>>>>>> Stashed changes
+                <li><a href="portfolio.php">Portfolios</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -34,115 +31,105 @@
         <nav id="topbar-menu" >
             <ul>
                 <li><a href="index.html">Home</a></li>
-<<<<<<< Updated upstream
-                <li><a href="portfolios.html">Portfolios</a></li>
-=======
-                <li><a href="portfolio.php">Portfolio</a></li>
->>>>>>> Stashed changes
+                <li><a href="portfolio.php">Portfolios</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
     </header>
+</div>
 
+<div class="hero-bk">
     <!-- Hero Section -->
-    <section class="grid-con">
-        <div class="box col-start-1 col-end-2 m-col-span-full l-col-span-full">
-            <h1>Hello, I'm Joy</h1>
-            <p>UI/UX Designer</p>
-                <div class="social-icons">
-                    <a href="#"><i class="icon-linkedin"></i></a>
-                    <a href="#"><i class="icon-github"></i></a>
-                    <a href="#"><i class="icon-portfolio"></i></a>
+    <section class="grid-con hero">
+        <div class="col-span-full m-col-span-full l-col-span-full">
+            <h1 class="hero-h1">Hello,  my name is Joy</h1>
+            <p class="hero-p">I'm a UI/UX & Graphic Designer</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/qiao-yi-chu-978721199/" target="_blank"><img src="images/LinkedIn.svg" class="hero-icon" alt="linkedin icon"></a>
+                    <a href="https://github.com/Qiaoyi-C" target="_blank"><img src="images/Github.svg" class="hero-icon" alt="github icon"></a>
+                    <a href="https://dribbble.com/joychu" target="_blank"><img src="images/Dribbble.svg" class="hero-icon" alt="dribbble icon"></a>
                 </div>
-            <img src="00" alt="Joy Chu Image">
         </div>
+
     </section>
+</div>
 
     <!-- Portfolio Section -->
+<div class="port-bk">
     <section class="portfolio grid-con">
-        <h2 class="box col-start-1 col-end-5 m-col-span-full l-col-span-full">Portfolios</h2>
+        <h2 class="port-title col-start-1 col-end-5 m-col-span-full l-col-span-full">Portfolio</h2>
         
         <div class="card col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-5">
-            <img src="00" alt="Project Image">
-            <p>Project Name</p>
+            <a href=""><img src="images/project-01.png" alt="Project Image"></a>
+            <p class="project-title">Company Web</p>
         </div>
 
         <div class="card col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-5 l-col-end-9">
-            <img src="00" alt="Project Image">
-            <p>Project Name</p>
+            <a href=""><img src="images/project-02.png" alt="Project Image"></a>
+            <p class="project-title">Virtual Currency App</p>
         </div>
 
         <div class="card col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-9 l-col-end-13">
-            <img src="00" alt="Project Image">
-            <p>Project Name</p>
+            <a href=""><img src="images/project-03.jpg" alt="Project Image"></a>
+            <p class="project-title">Earbuds Design</p>
             </div>
 
         <div class="card col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-1 l-col-end-5">
-            <img src="00" alt="Project Image">
-            <p>Project Name</p>
+            <a href=""><img src="images/project-04.jpg" alt="Project Image"></a>
+            <p class="project-title">ZIMA Design</p>
         </div>
         
         <div class="box col-start-1 col-end-5 m-col-span-full l-col-span-full">
-            <a href="portfolios.html" class="button-link">MORE</a>  
+            <a href=""><a href="portfolios.html" class="button-link">MORE</a> </a> 
         </div>
        
     </section>
+</div>
 
     <!-- About Section -->
-    <section class="about grid-con">
-        <div class="box col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-5">
-            <h2>About</h2>
-            <p>Introduce myself...</p>
-            <a href="about.html" class="button-link">MORE</a> 
-        </div>
-<<<<<<< Updated upstream
-          
-        <div class="box col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-5 l-col-end-13">
-            <video controls>
-                <source src="path-to-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-=======
-        
-        <!-- video -->
-        <div id="player-container" class="video col-start-1 col-end-5 m-col-start-6 m-col-end-13 l-col-start-6 l-col-end-13">
-            <video controls preload="metadata" poster="images/placeholder.jpg">
-                <source src="video/intro.mp4" type="video/mp4">
-                <source src="video/intro.webm" type="video/webm">
-            <p>Your browser does not support the video tag.</p>
->>>>>>> Stashed changes
-            </video>
-            <div class="video-controls hidden" id="video-controls">
-                <button id="play-button"><i class="fa fa-play-circle-o"></i></button>
-                <button id="pause-button"><i class="fa fa-pause-circle-o"></i></button>
-                <button id="stop-button"><i class="fa fa-stop-circle-o"></i></button>
-                <i class="fa fa-volume-up"></i>
-                <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
-                <button id="full-screen"><i class="fa fa-arrows-alt"></i></button>
+    <section class="about-bk grid-con">
+        <h2 class="about col-span-full">About</h2>
+        <div class="col-start-1 col-end-5 m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6">
+            
+            <div class="about-contact">
+                <p>I possess three years of dedicated experience in UI design, fueled by a strong passion for the field.  <br>
+                    Proficient in utilizing Figma and the Adobe suite, I bring a wealth of design expertise to the table. <br>
+                    My commitment lies in crafting exceptional user experiences and visually captivating designs.</p>
             </div>
+            <div class="about-bt"><a href="about.html" class="button-link">MORE</a> </div>
+        </div>
+          
+        <div class="video col-start-1 col-end-5 m-col-start-6 m-col-end-13 l-col-start-6 l-col-end-13">
+            <video controls class="about-video ">
+                <source src="video/intro.mp4" type="video/mp4">
+            </video>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact grid-con">
-        <div class="box col-start-1 col-end-5 m-col-span-full l-col-span-full">
-            <h2>Contact</h2>
+<div class="contact">
+    <section class="grid-con">
+        <div class=" col-start-1 col-end-5 m-col-span-full l-col-span-full">
+            <h2 class="contact-title">Contact</h2>
         </div>
 
-        <div class="box col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-5">
-            <img src="000" alt="contact img">
+        <div class="contact-img col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+            <img src="images/joy.png" alt="contact img">
         </div>
        
-        <div class="box col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-5 l-col-end-13">
-            <p>E-mail: a1203544@gmail.com</p>
-            <p>Phone: 226-977-7721</p>
+        <div class="contact-text col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+            <div class="contact-tx"><p>E-mail: a1203544@gmail.com</p>
+            <p>Phone: 226-977-7721</p></div>
             <a href="contact.html" class="button-link">Send me a message</a>
         </div>
 
     </section>
+</div>
 
     <!-- Footer -->
+<div class="footer-bk">
     <footer id="footer" class="grid-con">
         <div id="footer-logo" class="box col-span-full m-col-start-1 m-col-end-5 l-col-start-1 l-col-end-5">
             <img src="images/logo.svg" alt="logo">
@@ -150,18 +137,19 @@
     
         <nav id="footer-menu" class="box m-col-start-6 m-col-end-13 l-col-start-6 l-col-end-13">
             <ul>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="portfolios.html">Portfolios</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     
-        <div id="footer-copyright" class="box col-span-full">
+        <div id="footer-copyright" class="col-span-full">
             <p>&copy; 2024 Joy Chu. All Rights Reserved.</p>
         </div>
     </footer>
-
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/thirdparty.js"></script>
 </body>
 </html>
