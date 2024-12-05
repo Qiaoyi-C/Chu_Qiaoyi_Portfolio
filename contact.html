@@ -9,70 +9,88 @@
 </head>
 <body>
 
+ 
     <!-- Header -->
-    <header id="header-long" class="grid-con">       
-        <div id="logo" class="box col-start-1 col-end-2 m-col-span-full l-col-start-1 l-col-end-2">
-            <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
-        </div>
-        <div id="menu" class="box col-start-2 col-end-5 m-col-span-full l-col-start-2 l-col-end-5" onclick="toggleMenu()">
-            <img src="images/menu.svg" alt="hamburger menu icon">
-        </div>
-        <nav id="sidebar-menu" class="grid-con m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolios.html">Portfolios</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <nav id="topbar-menu" >
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolios.html">Portfolios</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-    </header>
+    <div class="header">
+        <header id="header-long" class="grid-con">       
+            <div id="logo" class="box col-start-1 col-end-2 m-col-span-full l-col-start-1 l-col-end-2">
+                <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+            </div>
+            <div id="menu" class="box col-start-2 col-end-5 m-col-span-full l-col-start-2 l-col-end-5" onclick="toggleMenu()">
+                <img src="images/menu.svg" alt="hamburger menu icon">
+            </div>
+            <nav id="sidebar-menu" class="grid-con m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolios.html">Portfolios</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <nav id="topbar-menu" >
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolios.html">Portfolios</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    
+        </header>
+    </div>
 
     <!-- Contact Section -->
-    <section class="contact grid-con">
-        <div class="box col-start-1 col-end-5 m-col-span-full l-col-span-full">
-            <h2>Contact</h2>
+    <section class="contact-section">
+        <h1 class="contact-title">Contact</h1>
+        <div class="contact-container">
+          <!-- Left Illustration -->
+          <div class="contact-illustration">
+            <img src="illustration.png" alt="Contact Illustration">
+          </div>
+    
+          <!-- Right Form -->
+          <form class="contact-form">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" placeholder="First Name">
+    
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" placeholder="Last Name">
+    
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" placeholder="Phone">
+    
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="E-mail">
+    
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Message"></textarea>
+    
+            <button type="submit" class="send-button">Send</button>
+          </form>
         </div>
-
-        <div class="box col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-5">
-            <img src="000" alt="contact img">
-        </div>
-       
-        <div class="box col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-5 l-col-end-13">
-            <p>E-mail: a1203544@gmail.com</p>
-            <p>Phone: 226-977-7721</p>
-            <a href="contact.html" class="button-link">Send me a message</a>
-        </div>
-
-    </section>
+      </section>
 
     <!-- Footer -->
-    <footer id="footer" class="grid-con">
-        <div id="footer-logo" class="box col-span-full m-col-start-1 m-col-end-5 l-col-start-1 l-col-end-5">
-            <img src="images/logo.svg" alt="logo">
-        </div>
-    
-        <nav id="footer-menu" class="box m-col-start-6 m-col-end-13 l-col-start-6 l-col-end-13">
-            <ul>
-                <li><a href="portfolios.html">Portfolios</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    
-        <div id="footer-copyright" class="box col-span-full">
-            <p>&copy; 2024 Joy Chu. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <div class="footer-bk">
+        <footer id="footer" class="grid-con">
+            <div id="footer-logo" class="box col-span-full m-col-start-1 m-col-end-5 l-col-start-1 l-col-end-5">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+        
+            <nav id="footer-menu" class="box m-col-start-6 m-col-end-13 l-col-start-6 l-col-end-13">
+                <ul>
+                    <li><a href="portfolios.html">Portfolios</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        
+            <div id="footer-copyright" class="col-span-full">
+                <p>&copy; 2024 Joy Chu. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
