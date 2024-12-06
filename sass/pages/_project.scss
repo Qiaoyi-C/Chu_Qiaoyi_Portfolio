@@ -31,14 +31,14 @@
 }
 
 .case-study h3::before {
-    content: ""; /* 可以是裝飾性符號、文字，或留空用於設置樣式 */
-    display: inline-block; /* 讓它像元素一樣可調大小 */
-    width: 10px; /* 裝飾物的寬度 */
-    height: 10px; /* 裝飾物的高度 */
-    background-color: #6C3205; /* 裝飾物的顏色 */
-    border-radius: 50%; /* 若想要圓形，使用此屬性 */
-    margin-right: 10px; /* 與標題文字的間距 */
-    vertical-align: middle; /* 確保與文字對齊 */
+    content: ""; 
+    display: inline-block; 
+    width: 10px; 
+    height: 10px; 
+    background-color: #6C3205; 
+    border-radius: 50%; 
+    margin-right: 10px; 
+    vertical-align: middle; 
 }
 
 .case-study p {
@@ -67,4 +67,13 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.lot-images{
+    text-align: center;
+}
+
+.lot-images img{
+    width: 70%;
+    border: solid #FFF;
 }
