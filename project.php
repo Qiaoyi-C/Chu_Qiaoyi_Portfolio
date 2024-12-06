@@ -74,6 +74,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
     <!-- Case Study -->
     <main >
+        <div class="pro-bk">
         <section class="case-study">
             <h2><?php echo htmlspecialchars($project['title']); ?></h2>
             
@@ -115,6 +116,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
             </div>
         </section>
+        </div>
     </main>
 
     <!-- Footer -->
