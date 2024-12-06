@@ -1,17 +1,14 @@
 <?php
-// 確保連接資料庫
 require_once('includes/connect.php');
 
-// 驗證並獲取 URL 中的 id
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $project_id = intval($_GET['id']);
 
-    // 根據 id 查詢專案
     $query = "SELECT * FROM Project WHERE id = $project_id";
     $result = mysqli_query($connect, $query);
 
     if ($result && mysqli_num_rows($result) > 0) {
-        $project = mysqli_fetch_assoc($result); // 獲取專案的詳細數據
+        $project = mysqli_fetch_assoc($result);
     } else {
         echo "<p>Project not found.</p>";
         exit;
@@ -92,6 +89,9 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 </div>
 
                 <div class="images col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+                    <img src="images/<?php echo htmlspecialchars($project['image']); ?>" alt="<?php echo htmlspecialchars($project['title']); ?>">
+                </div>
+                <div class="images col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
                     <img src="images/<?php echo htmlspecialchars($project['image']); ?>" alt="<?php echo htmlspecialchars($project['title']); ?>">
                 </div>
 
