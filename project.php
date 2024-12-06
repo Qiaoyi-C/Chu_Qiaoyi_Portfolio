@@ -103,6 +103,16 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                     <p><?php echo nl2br(htmlspecialchars($project['solution'])); ?></p>
                 </div>
 
+                <div class="pro-video col-span-full">
+                <?php if (!empty($project['video'])): ?>
+                    <div class="video-container">
+                        <iframe src="video/<?php echo htmlspecialchars($project['video']); ?>" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                <?php else: ?>
+                    <p><?php echo nl2br(htmlspecialchars($project['video'])); ?></p>
+                <?php endif; ?>
+                </div>
+
                 <div class="images col-span-full">
                 <?php foreach ($images as $image): ?>
                     <img src="images/<?php echo htmlspecialchars($image); ?>" alt="<?php echo htmlspecialchars($project['title']); ?>">
