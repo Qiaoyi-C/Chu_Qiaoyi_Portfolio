@@ -113,7 +113,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 <?php endif; ?>
                 </div>
 
-                <div class="images col-span-full">
+                <div class="lot-images images col-span-full">
                 <?php foreach ($images as $image): ?>
                     <img src="images/<?php echo htmlspecialchars($image); ?>" alt="<?php echo htmlspecialchars($project['title']); ?>">
                 <?php endforeach; ?>
