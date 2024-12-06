@@ -55,6 +55,7 @@ if (!$result) {
 
 
     <!-- Portfolio Section -->
+    <div class="portfolio-bk">
     <section class="grid-con portfolio-bk">
     <h2 class="port-title col-start-1 col-end-5 m-col-span-full l-col-span-full">Portfolios</h2>
     <?php
@@ -91,7 +92,7 @@ if (!$result) {
         </div> <!-- End of card div -->
     <?php endwhile; ?>
 </section>
-
+</div>
 
     
 
