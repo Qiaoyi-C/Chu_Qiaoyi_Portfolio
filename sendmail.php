@@ -39,7 +39,7 @@ if(empty($errors)) {
 
     //insert these values as a new row in the contacts table
 
-    $query = "INSERT INTO Contact (last_name,first_name, email, comments) VALUES('.$lname.','.$fname.','.$email.','.$msg.')";
+    $query = "INSERT INTO Contact (last_name,first_name, email, message) VALUES('.$last_name.','.$first_name.','.$email.','.$message.')";
 
     if(mysqli_query($connect, $query)) {
 
