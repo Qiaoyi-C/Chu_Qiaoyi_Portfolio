@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const menuIcon = document.querySelector('#menu'); // 選取漢堡圖示
-  const sidebarMenu = document.querySelector('#sidebar-menu'); // 選取側邊選單
-  const closeMenu = document.querySelector('#close-menu'); // 選取叉叉按鈕
+  const menuIcon = document.querySelector('#menu'); 
+  const sidebarMenu = document.querySelector('#sidebar-menu'); 
+  const closeMenu = document.querySelector('#close-menu'); 
 
-  // 點擊漢堡圖示，開啟側邊選單
+  
   menuIcon.addEventListener('click', () => {
       sidebarMenu.classList.add('active');
   });
 
-  // 點擊叉叉按鈕，關閉側邊選單
+  
   closeMenu.addEventListener('click', () => {
       sidebarMenu.classList.remove('active');
   });
@@ -231,4 +231,30 @@ gsap.from(".about-intro", {
   
   })();
   
-  
+  // Constant
+  document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('successModal');
+    const closeBtn = document.querySelector('.close');
+
+    // Show modal
+    function showModal() {
+        modal.style.display = 'block';
+    }
+
+    // Hide modal
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    // Call this function on form submit success
+    if (window.location.search.includes('success=true')) {
+        showModal();
+    }
+});
