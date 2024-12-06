@@ -3,7 +3,7 @@
 require_once('includes/connect.php');
 
 // 從資料庫中只選擇 title 和 image 欄位
-$query = "SELECT title, image FROM project";
+$query = "SELECT id, title, image FROM Project";
 $result = mysqli_query($connect, $query);
 
 if (!$result) {
@@ -21,6 +21,7 @@ if (!$result) {
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+
     <!-- Header -->
     <div class="header">
     <header id="header-long" class="grid-con">       
@@ -79,10 +80,12 @@ if (!$result) {
         }
         ?>
         <div>
-        <div class="portfolio-item">
-            <img src="images/<?php echo $row['image']; ?>" alt="<?php echo $row['title']; ?>">
-            <p class="project-title"><?php echo $row['title']; ?></p>
-        </div>
+        <a href="project.php?id=<?php echo $row['id']; ?>" class="portfolio-link">
+            <div class="portfolio-item">
+                <img src="images/<?php echo $row['image']; ?>" alt="<?php echo $row['title']; ?>">
+                <p class="project-title"><?php echo $row['title']; ?></p>
+            </div>
+        </a>
         </div>
 
         </div> <!-- End of card div -->
