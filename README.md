@@ -22,10 +22,10 @@ Visual Design: Layout, typography, and branding
 Interaction Design: Animations and micro-interactions
 
 ## Tools & Technologies 🖌️
-Design Tools: Figma, Adobe XD, Illustrator, Photoshop
-Prototyping Tools: Figma
-3D Design: Cinema 4D
-Video: Adobe Premiere, After Effects
+Design Tools: Figma, Adobe XD, Illustrator, Photoshop  
+Prototyping Tools: Figma  
+3D Design: Cinema 4D  
+Video: Adobe Premiere, After Effects  
 
 ## Features 📋
 Fully Responsive Design
