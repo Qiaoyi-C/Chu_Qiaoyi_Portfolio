@@ -38,7 +38,11 @@ To view the portfolio locally:
 
 * Clone this repository
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 * Navigate into the project directory:  
+=======
+* Navigate into the project directory:
+>>>>>>> Stashed changes
 =======
 * Navigate into the project directory:
 >>>>>>> Stashed changes
