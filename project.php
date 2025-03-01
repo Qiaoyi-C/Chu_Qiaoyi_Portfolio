@@ -1,32 +1,21 @@
 <?php
-// 確保連接資料庫
-require_once('includes/connect.php');
+require_once('includes/connect.php'); 
 
-// 驗證並獲取 URL 中的 id
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $project_id = intval($_GET['id']);
 
-    // 查詢專案基本資訊
-    $query = "SELECT * FROM Project WHERE id = $project_id";
-    $result = mysqli_query($connect, $query);
+    $stmt = $pdo->prepare("SELECT * FROM Project WHERE id = :id");
+    $stmt->execute(['id' => $project_id]);
+    $project = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if ($result && mysqli_num_rows($result) > 0) {
-        $project = mysqli_fetch_assoc($result); // 獲取專案詳細資料
-    } else {
+    if (!$project) {
         echo "<p>Project not found.</p>";
         exit;
     }
 
-    // 查詢該專案的所有圖片
-    $image_query = "SELECT image FROM project_images WHERE project_id = $project_id";
-    $image_result = mysqli_query($connect, $image_query);
-
-    $images = [];
-    if ($image_result && mysqli_num_rows($image_result) > 0) {
-        while ($row = mysqli_fetch_assoc($image_result)) {
-            $images[] = $row['image']; // 將圖片路徑儲存到陣列
-        }
-    }
+    $stmt = $pdo->prepare("SELECT image FROM project_images WHERE project_id = :id");
+    $stmt->execute(['id' => $project_id]);
+    $images = $stmt->fetchAll(PDO::FETCH_COLUMN); 
 } else {
     echo "<p>Invalid Project ID.</p>";
     exit;

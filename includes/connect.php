@@ -1,8 +1,13 @@
 <?php
-//Creates a connection to the database. This code is 'included' into another file, as if it is pasted into the other file.
-$connect = new mysqli('localhost','root','root','portfolio');
+$host = "localhost:8889";
+$dbname = "portfolio";
+$username = "root";
+$password = "root";
 
-
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("error: " . $e->getMessage());
+}
 ?>
-
-

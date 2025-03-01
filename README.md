@@ -37,7 +37,19 @@ Focus on usability and accessibility
 To view the portfolio locally:
 
 * Clone this repository
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 * Navigate into the project directory:  
+=======
+* Navigate into the project directory:
+>>>>>>> Stashed changes
+=======
+* Navigate into the project directory:
+>>>>>>> Stashed changes
+=======
+* Navigate into the project directory:
+>>>>>>> Stashed changes
 * Open the index.html file in your browser, or if using a local server, start the server and navigate to localhost to view.
 
 ## Contact 📱
