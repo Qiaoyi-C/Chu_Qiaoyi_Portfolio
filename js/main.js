@@ -38,6 +38,40 @@ document.querySelectorAll(".card").forEach((card, index) => {
   );
 });
 
+// Hero Section Text Animation
+gsap.fromTo(
+  ".hero-h1, .hero-p", 
+  { opacity: 0, y: 50 }, 
+  {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".hero-bk",
+      start: "top 80%",
+    },
+  }
+);
+
+// Social Icons Animation
+gsap.fromTo(
+  ".social-links a",
+  { opacity: 0, y: 30 },
+  {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".social-links",
+      start: "top 90%",
+    },
+  }
+);
+
+
 // === Left & Right Card Slide-in ===
 const leftCard = document.querySelector(".about-contact, .contact-img");
 const rightCard = document.querySelector(".video, .contact-text");
@@ -258,3 +292,61 @@ gsap.from(".about-intro", {
         showModal();
     }
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+// About 從左邊滑進來
+gsap.from(".about", {
+  x: -100, // 從左側開始
+  opacity: 0, // 初始透明
+  duration: 1, // 動畫持續 1 秒
+  ease: "power2.out", // 平滑動畫
+  scrollTrigger: {
+    trigger: ".about",
+    start: "top 80%", // 當元素到達視窗 80% 高度時觸發
+  }
+});
+
+// Experience 從右邊滑進來
+gsap.from(".experience", {
+  x: 100, // 從右側開始
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".experience",
+    start: "top 80%",
+  }
+});
+
+// Skill 從上方滑進來
+gsap.from(".skills", {
+  y: -100, // 從上方開始
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".skills",
+    start: "top 80%",
+  }
+});
+
+// Hero Image Animation (scroll from small to large, faster)
+gsap.fromTo(
+  ".hero-image", 
+  { scale: 0.5, opacity: 0 }, // Start with smaller scale (50%) and invisible
+  {
+    scale: 1, // End with normal size (100%)
+    opacity: 1, // Fade in
+    duration: 0.5, // Faster animation duration (half a second)
+    ease: "power3.out", // Smooth easing
+    scrollTrigger: {
+      trigger: ".hero-bk", // Trigger point is the .hero-bk section
+      start: "top 80%", // Start animation when .hero-bk is at 80% of the viewport height
+    },
+  }
+);
+
+
+
+

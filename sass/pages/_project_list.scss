@@ -1,26 +1,22 @@
-/* 設定背景色，米色 */
 body {
     font-family: Arial, sans-serif;
-    background-color: #DECCBE; 
-    color: #3e3e3e; /* 深灰色文字 */
+    background-color: #ffffff; 
+    color: #3e3e3e; 
     margin: 0;
     padding: 0;
 }
 
-/* 頁面容器 */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* 頂部標題 */
-h1 {
-    color: #5d4037; /* 淺咖啡色 */
-    text-align: center;
-}
+// h1 {
+//     color: #5d4037; 
+//     text-align: center;
+// }
 
-/* 項目列表的樣式 */
 .project-list {
     background-color: #fff;
     border: 1px solid #e0e0e0;
@@ -30,19 +26,17 @@ h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* 每個項目的標題 */
 .project-list a {
     text-decoration: none;
-    color: rgb(224, 12, 12); /* 淺咖啡色 */
+    color: rgb(224, 12, 12); 
     margin-left: 10px;
     font-weight: bold;
 }
 
 .project-list a:hover {
-    color: rgb(149, 8, 8); /* 略深的咖啡色 */
+    color: rgb(149, 8, 8); 
 }
 
-/* 表單樣式 */
 form {
     background-color: #fff;
     padding: 20px;
@@ -51,12 +45,11 @@ form {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 表單欄位 */
 form label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #5d4037; /* 淺咖啡色 */
+    color: #5d4037; 
 }
 
 /* 表單輸入框 */
@@ -69,12 +62,11 @@ form textarea {
     border-radius: 5px;
     margin-bottom: 20px;
     font-size: 16px;
-    color: #5d4037; /* 淺咖啡色 */
+    color: #5d4037; 
 }
 
-/* 表單提交按鈕 */
 form input[type="submit"] {
-    background-color: #8d6e63; /* 深咖啡色 */
+    background-color: #8d6e63; 
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -84,20 +76,19 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #5d4037; /* 更深的咖啡色 */
+    background-color: #5d4037; 
 }
 
-/* 登出按鈕 */
 a.logout {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #d50e00; /* 淺咖啡色 */
+    background-color: #d50e00; 
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
 a.logout:hover {
-    background-color: #a60000; /* 略深的咖啡色 */
+    background-color: #a60000;
 }

@@ -1,32 +1,125 @@
-.about{
-    color: #6C3205;
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    margin: 24px;
-}
-
 .about-bk{
-    margin-bottom: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.about {
+    background: #FBF5EE;
+    padding: 24px;
+    border-radius: 30px;
+    margin-bottom: 30px;
 }
 
-.about-contact{
+.info-h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #936041;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.info-p {
     font-size: 18px;
-    margin-top: 24px;
-    margin-bottom: 40px;
+    line-height: 1.8;
+    margin-bottom: 10px;
 }
 
-.about-contact p {
-    line-height: 1.6;
+.stats {
+    display: flex;
+    justify-content: left;
+    gap: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-.m-title{
-    color: #6C3205;
-    font-size: 20px;
+.stats .number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FD6F00;
 }
 
-.tools{
-    margin-bottom: 40px;
+.small-p{
+    color: #936041;
+}
+
+.resume-btn {
+    background: #f4c190;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Experience 區塊 */
+.experience {
+    background: #F6E4D2;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 3px solid #9c6b3d;
+    margin-top: 15px;
+}
+
+.exp-item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.exp-item .dot {
+    position: absolute;
+    left: -11px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    background: #9c6b3d;
+    border-radius: 50%;
+}
+
+.exp-item h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.exp-item p {
+    margin: 5px 0;
+}
+
+.exp-item .date {
+    font-size: 14px;
+    color: #7a573c;
+}
+
+/* Skills 區塊 */
+.skills {
+    background: #FFE7DD;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.skill-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 15px;
+}
+
+.skill-icons img {
+    width: 10%;
+
 }
 
 @media screen and (max-width: 768px){

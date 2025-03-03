@@ -1,54 +1,78 @@
 @use '../abstracts' as a;
-.footer-bk{
-    background-color: #F0D9C5;
+/* Footer  */
+.footer-bk {
+    background-color: #b68267; /* 背景色 */
+    padding: 20px 0;
 }
 
-#footer {
-    padding: 20px;
-    text-align: center;
-}
-
-#footer-logo {
+.footer-container {
     display: flex;
-    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
 }
 
+/* Logo */
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
 
-#footer-menu ul {
-    list-style-type: none;
+.footer-logo img {
+    height: 40px; 
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Menu */
+.footer-menu ul {
+    display: flex;
+    list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: flex-end; 
+    margin: 0;
 }
 
-#footer-menu ul li {
-    margin: 0 10px;
+.footer-menu ul li {
+    margin: 0 20px;
 }
 
-#footer-menu ul li a {
+.footer-menu ul li a {
     text-decoration: none;
-    color: #6C3205;
+    font-weight: bold;
+    color: white;
     font-size: 16px;
 }
 
-#footer-menu ul li a:hover {
-    color: #FD6F00; 
+.footer-menu ul li a:hover {
+    color: #FD6F00;
 }
 
-#footer-copyright {
-    text-align: center;
+/* Copyright */
+.footer-copyright {
     font-size: 14px;
-    color: #888;
-    margin-top: 10px;
+    color: white;
+    padding-top: 20px;
 }
-
 @media screen and (max-width: 768px) {
-    #footer-menu,
-    #footer-copyright {
+    .footer-menu,
+    .footer-copyright {
         display: none;
     }
 
-    #footer-logo {
+    .footer-logo {
         justify-content: center; /* 在手機上讓 logo 居中 */
     }
+
+    .footer-container {
+        display: grid;
+    }
 }
+
+
