@@ -159,7 +159,7 @@ try {
             </div>
         </div>
         <div class="about-bt">
-            <a href="https://profile.indeed.com/p/qiaoyic-9vzpkc7" class="button-link">Download my Resume</a>
+            <a href="https://profile.indeed.com/p/qiaoyic-9vzpkc7" target="_blank" class="button-link">Download my Resume</a>
         </div>
     </div>
 
