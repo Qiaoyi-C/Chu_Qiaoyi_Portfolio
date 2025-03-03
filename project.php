@@ -16,6 +16,16 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $stmt = $pdo->prepare("SELECT image FROM project_images WHERE project_id = :id");
     $stmt->execute(['id' => $project_id]);
     $images = $stmt->fetchAll(PDO::FETCH_COLUMN); 
+
+    $stmt = $pdo->prepare("
+        SELECT c.name 
+        FROM category c
+        JOIN project_category pc ON c.id = pc.category_id
+        WHERE pc.project_id = :id
+    ");
+    $stmt->execute(['id' => $project_id]);
+    $categories = $stmt->fetchAll(PDO::FETCH_COLUMN); 
+
 } else {
     echo "<p>Invalid Project ID.</p>";
     exit;
@@ -33,6 +43,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 </head>
 <body>
     <!-- Header -->
+    <div class="header-bk">
     <div class="header">
         <header id="header-long" class="grid-con">
             <div id="logo" class="box col-start-1 col-end-3 m-col-span-full l-col-start-1 l-col-end-2">
@@ -60,9 +71,10 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             </nav>
         </header>
     </div>
+    </div>
 
     <!-- Case Study -->
-    <main >
+    <main>
         <div class="pro-bk">
         <section class="case-study">
             <h2><?php echo htmlspecialchars($project['title']); ?></h2>
@@ -108,6 +120,11 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 <?php endforeach; ?>
                 </div>
 
+                <div class="categories col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+                    <h3>Categories</h3>
+                    <p><?php echo htmlspecialchars(implode(', ', $categories)); ?></p>
+                </div>
+
                 <div class="created-dat col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
                     <h3>Created Date</h3>
                     <p><?php echo htmlspecialchars($project['created_date']); ?></p>
@@ -141,8 +158,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             </div>
         </div>
     </footer>
-</div>
-
+    </div>
 
     <script src="js/main.js"></script>
 </body>
