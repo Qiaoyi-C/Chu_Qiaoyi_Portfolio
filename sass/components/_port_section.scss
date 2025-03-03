@@ -1,25 +1,54 @@
 .port-bk{
-   background-color: #DECCBE;
-   padding-top: 30px;
+   background-color: #C5896F;
    padding-bottom: 50px;
+   position: relative;
+   padding-top: 20px;
+
+}
+
+.wave-bg {
+   position: absolute;
+   top: -80px; 
+   left: 0;
+   width: 100%;
+   height: auto;
 }
 
 .port-title{
     text-align: center;
-    color: #6C3205;
+    color: #ffffff;
     font-size: 32px;
     font-weight: bold;
     margin: 24px;
+    position: relative;  
+    z-index: 1;   
  }
+
+ .portfolio-row {
+   display: grid;
+   gap: 16px; 
+   justify-content: center; 
+   grid-template-columns: 1fr;
+}
 
  .card{
    background-color: white;
    border-radius: 20px;
-   border: solid 1px #E6E6E6;
    margin-bottom: 16px;
    text-align: center;
    display: grid;
    transition: transform 0.3s ease;
+   width: 100%;
+
+}
+
+.category{
+   color:  #C5896F;
+   font-size: 14px;
+   border-radius: 20px;
+   border: solid #C5896F;
+   width: 30%;
+   margin: 8px 24px;
 
 }
 
@@ -55,3 +84,24 @@
    color: white;
 }
 
+@media screen and (min-width: 768px){
+   .wave-bg {
+      top: -170px; 
+   }
+
+   .portfolio-row {
+      display: flex;
+      gap: 16px; 
+      justify-content: center; 
+      grid-template-columns: 3fr;
+   }
+   
+}
+
+@media screen and (min-width: 1200px) { 
+   .wave-bg {
+      top: -200px; 
+   }
+
+
+}
