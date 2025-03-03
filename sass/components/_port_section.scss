@@ -42,15 +42,23 @@
 
 }
 
-.category{
-   color:  #C5896F;
-   font-size: 14px;
-   border-radius: 20px;
-   border: solid #C5896F;
-   width: 30%;
-   margin: 8px 24px;
-
+.category-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+   margin: 8px;
 }
+
+.category {
+   display: inline-block;
+   color: #C5896F;
+   border: solid #f8d9ca;
+   padding: 8px;
+   border-radius: 10px; 
+   font-size: 14px;
+   white-space: nowrap; 
+}
+
 
 .card:hover {
    transform: scale(1.1) !important;
