@@ -2,7 +2,12 @@
 require_once('includes/connect.php'); 
 
 try {
-    $stmt = $pdo->query("SELECT id, title,category, image FROM Project");
+    $stmt = $pdo->query("
+    SELECT p.id, p.title, p.image, GROUP_CONCAT(c.name ORDER BY c.name SEPARATOR ', ') AS category
+    FROM Project p
+    LEFT JOIN project_category pc ON p.id = pc.project_id
+    LEFT JOIN category c ON pc.category_id = c.id
+    GROUP BY p.id, p.title, p.image");
     $projects = $stmt->fetchAll(PDO::FETCH_ASSOC); 
 } catch (PDOException $e) {
     die('Error: ' . $e->getMessage());
@@ -80,7 +85,7 @@ try {
     <section class="portfolio grid-con">
         <h2 class="port-title col-start-1 col-end-5 m-col-span-full l-col-span-full">Portfolio</h2>
         
-        <div class="portfolio-row col-span-full m-col-span-full l-col-span-full"> <!-- 用來包裹 3 個項目 -->
+        <div class="portfolio-row col-span-full m-col-span-full l-col-span-full"> 
             <?php 
             $count = 0; 
             foreach ($projects as $row): 
@@ -91,7 +96,14 @@ try {
                     <a href="project.php?id=<?= htmlspecialchars($row['id']) ?>" class="portfolio-link">
                         <div class="portfolio-item">
                             <img src="images/<?= htmlspecialchars($row['image']) ?>" alt="<?= htmlspecialchars($row['title']) ?>">
-                            <p class="category"><?= htmlspecialchars($row['category']) ?></p>
+                            <div class="category-container">
+                                <?php 
+                                    $categories = explode(', ', $row['category']); 
+                                    foreach ($categories as $category): 
+                                ?>
+                                    <span class="category"><?= htmlspecialchars($category) ?></span>
+                                <?php endforeach; ?>
+                            </div>
                             <p class="project-title"><?= htmlspecialchars($row['title']) ?></p>
                         </div>
                     </a>
