@@ -11,6 +11,14 @@
 .about-container {
     color: #6C3205;
   }
+
+.aboutpg{
+  padding: 24px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 32px;
+}
   
 .about-photo img {
     width: 100%;
@@ -26,7 +34,7 @@
   
 /* What I Do Section */
 .what-i-do {
-    background-color: #A08974;
+    background-color: #C5896F;
     padding-top: 20px;
     padding-bottom: 60px;
     color: #fff;
@@ -47,12 +55,11 @@
 /* Skills and Tools Section */
 .skills-tools {
     padding: 48px 16px;
-    background-color: #FFF9F4;
     color: #6C3205;
   }
 
 .skills-tools-container{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
   
 .st {
@@ -72,3 +79,34 @@
     font-size: 16px;
     line-height: 1.6;
   }
+
+.skillpg-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 15px;
+}
+
+.skillpg-icons img {
+    width: 20%;
+
+}
+
+.skill-space{
+  margin-bottom: 60px;
+}
+
+.experience2 {
+  background: #F6E4D2;
+  padding: 24px;
+  border-radius: 30px;
+  margin-bottom: 24px;
+}
+
+.skills2 {
+  background: #FFE7DD;
+  padding: 20px;
+  border-radius: 30px;
+  text-align: center;
+  margin-bottom: 24px;
+}
