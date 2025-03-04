@@ -1,13 +1,12 @@
 <?php
-$host = "localhost:8889";
-$dbname = "portfolio";
-$username = "root";
-$password = "root";
-
+$dsn = "mysql:host=localhost;dbname=portfolio;charset=utf8mb4";
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $pdo = new PDO($dsn, 'root', 'root', [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC 
+    ]);
 } catch (PDOException $e) {
-    die("error: " . $e->getMessage());
+    error_log($e->getMessage());
+    exit('Unable to connect to database');
 }
 ?>

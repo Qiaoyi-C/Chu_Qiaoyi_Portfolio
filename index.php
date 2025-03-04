@@ -2,13 +2,17 @@
 require_once('includes/connect.php'); 
 
 try {
-    $stmt = $pdo->query("
-    SELECT p.id, p.title, p.image, GROUP_CONCAT(c.name ORDER BY c.name SEPARATOR ', ') AS category
-    FROM Project p
-    LEFT JOIN project_category pc ON p.id = pc.project_id
-    LEFT JOIN category c ON pc.category_id = c.id
-    GROUP BY p.id, p.title, p.image");
-    $projects = $stmt->fetchAll(PDO::FETCH_ASSOC); 
+    $stmt = $pdo->prepare("
+        SELECT p.id, p.title, p.image, 
+        COALESCE(GROUP_CONCAT(c.name ORDER BY c.name SEPARATOR ', '), '') AS category
+        FROM Project p
+        LEFT JOIN project_category pc ON p.id = pc.project_id
+        LEFT JOIN category c ON pc.category_id = c.id
+        GROUP BY p.id, p.title, p.image
+        LIMIT 3
+    ");
+    $stmt->execute();
+    $projects = $stmt->fetchAll();
 } catch (PDOException $e) {
     die('Error: ' . $e->getMessage());
 }
