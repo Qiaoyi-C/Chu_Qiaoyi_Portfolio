@@ -19,7 +19,13 @@
     }
 
     require_once('../includes/connect.php');
-    $stmt = $pdo->prepare('SELECT id, title, image FROM Project ORDER BY title ASC');
+    $stmt = $pdo->prepare('
+    SELECT Project.id, Project.title, Media.filename 
+    FROM Project 
+    JOIN Media ON Project.media_id = Media.id 
+    ORDER BY Media.id DESC
+');
+
     $stmt->execute();
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -57,6 +63,9 @@
 
     <label for="video">Project Video </label>
     <input name="video" type="file"><br><br>
+
+    <label for="category">Category </label>
+    <input name="category" type="text" required><br><br> 
 
     <label for="created_date">Project Date </label>
     <textarea name="created_date" required></textarea><br><br>
