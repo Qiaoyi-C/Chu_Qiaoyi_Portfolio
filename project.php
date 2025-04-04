@@ -38,6 +38,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - <?php echo htmlspecialchars($project['title']); ?></title>
+    <link rel="icon" href="images/logo.png" type="image/png">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
@@ -58,7 +59,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                     <li><a href="index.php">Home</a></li>
                     <li><a href="portfolio.php">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.php#contact">Contact</a></li>
                 </ul>
             </nav>
             <nav id="topbar-menu">
@@ -66,7 +67,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                     <li><a href="index.php">Home</a></li>
                     <li><a href="portfolio.php">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.php#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>

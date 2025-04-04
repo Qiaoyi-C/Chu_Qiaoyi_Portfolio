@@ -25,6 +25,7 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joy's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
@@ -43,7 +44,7 @@ try {
                     <li><a href="index.php">Home</a></li>
                     <li><a href="portfolio.php">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <nav id="topbar-menu">
@@ -51,7 +52,7 @@ try {
                     <li><a href="index.php">Home</a></li>
                     <li><a href="portfolio.php">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
