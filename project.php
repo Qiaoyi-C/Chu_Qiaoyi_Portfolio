@@ -78,31 +78,26 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     <main>
         <div class="pro-bk">
         <section class="case-study">
-            <h2><?php echo htmlspecialchars($project['title']); ?></h2>
+            <h2 class="study-h2"><?php echo htmlspecialchars($project['title']); ?></h2>
             
             <div class="grid-con">
-                <div class="background col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
-                    <h3>Background</h3>
-                    <p><?php echo nl2br(htmlspecialchars($project['background'])); ?></p>
+                <div class="description col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+                    <h3>Description</h3>
+                    <p class="study-p"><?php echo nl2br(htmlspecialchars($project['description'])); ?></p>
                 </div>
 
-                <div class="images col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+                <div class="project-images col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
                     <img src="images/<?php echo htmlspecialchars($project['image']); ?>" alt="<?php echo htmlspecialchars($project['title']); ?>">
                 </div>
 
-                <div class="problem col-span-full">
+                <div class="problem col-span-full l-col-start-1 l-col-end-7">
                     <h3>Problem</h3>
-                    <p><?php echo nl2br(htmlspecialchars($project['problem'])); ?></p>
+                    <p class="study-p"><?php echo nl2br(htmlspecialchars($project['problem'])); ?></p>
                 </div>
 
-                <div class="description col-span-full">
-                    <h3>Description</h3>
-                    <p><?php echo nl2br(htmlspecialchars($project['description'])); ?></p>
-                </div>
-
-                <div class="solution col-span-full">
+                <div class="solution col-span-full l-col-start-7 l-col-end-13">
                     <h3>Solution</h3>
-                    <p><?php echo nl2br(htmlspecialchars($project['solution'])); ?></p>
+                    <p class="study-p"><?php echo nl2br(htmlspecialchars($project['solution'])); ?></p>
                 </div>
 
                 <div class="pro-video col-span-full">
@@ -126,7 +121,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                     <p><?php echo htmlspecialchars(implode(', ', $categories)); ?></p>
                 </div>
 
-                <div class="created-dat col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+                <div class="created-date col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-7 l-col-end-13">
                     <h3>Created Date</h3>
                     <p><?php echo htmlspecialchars($project['created_date']); ?></p>
                 </div>
@@ -161,6 +156,8 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     </footer>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -66,7 +66,7 @@ try {
     <!-- Portfolio Section -->
     <div class="portfolio-bk">
         <section class="grid-con portfolio-bk">
-            <h2 class="portpage-title col-start-1 col-end-5 m-col-span-full l-col-span-full">Portfolio</h2>
+            <h2 class="portpage-title col-start-1 col-end-5 m-col-span-full l-col-span-full">Selected Works</h2>
 
             <?php
             $cell = 0;
@@ -131,6 +131,8 @@ try {
         </footer>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -70,6 +70,89 @@ gsap.fromTo(
   }
 );
 
+gsap.from(".study-h2", {
+  opacity: 0,
+  scale: 0.5,
+  color: "#fd6f00", // 初始顏色為粉紅色
+  duration: 1.5,
+  ease: "bounce.out",
+  yoyo: true, // 往返動畫
+  delay: 0.5, // 動畫延遲開始
+});
+
+gsap.from(".project-images", {
+  scrollTrigger: {
+    trigger: ".project-images",
+    start: "top 85%",
+    toggleActions: "play none none none"
+  },
+  opacity: 0,
+  x: 80,
+  duration: 1.2,
+  ease: "power3.out"
+});
+
+gsap.from(".description", {
+  opacity: 0,
+  y: 60,
+  duration: 1.2,
+  ease: "bounce.out",
+  scrollTrigger: {
+      trigger: ".description",
+      start: "top 85%",
+      toggleActions: "play none none none"
+  }
+});
+
+gsap.from(".problem", {
+  opacity: 0,
+  y: 50,
+  duration: 1,
+  ease: "bounce.out",
+  scrollTrigger: {
+      trigger: ".problem",
+      start: "top 80%",
+      toggleActions: "play none none none"
+  }
+});
+
+gsap.from(".solution", {
+  opacity: 0,
+  y: 50,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+      trigger: ".solution",
+      start: "top 80%",
+      toggleActions: "play none none none"
+  }
+});
+
+gsap.from(".created-date", {
+  opacity: 0,
+  x: -100,
+  duration: 1,
+  ease: "power3.out",
+  scrollTrigger: {
+      trigger: ".created-date",
+      start: "top 80%",
+      toggleActions: "play none none none"
+  }
+});
+
+gsap.from(".categories", {
+  opacity: 0,
+  x: -100,
+  duration: 1,
+  ease: "power3.out",
+  scrollTrigger: {
+      trigger: ".categories",
+      start: "top 80%",
+      toggleActions: "play none none none"
+  }
+});
+
+
 // Left & Right Card Slide-in Animations
 const leftCard = document.querySelector(".about-contact, .contact-img");
 const rightCard = document.querySelector(".video, .contact-text");
@@ -172,7 +255,7 @@ gsap.fromTo(
 );
 
 // About Section Slide-in Animation
-gsap.from(".about", {
+gsap.from(".about, .about-photo", {
   x: -100,
   opacity: 0,
   duration: 1,
@@ -205,7 +288,84 @@ gsap.from(".skills", {
     trigger: ".skills",
     start: "top 80%",
   }
+
+  
 });
+
+gsap.from('.about-intro', {
+  x: 100,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".about-intro",
+    start: "top 80%",
+  }
+});
+
+gsap.from('.skill-item', {
+  opacity: 0,
+  y: 100,
+  duration: 1,
+  stagger: 0.2,
+  scrollTrigger: {
+      trigger: '.skill-item',
+      start: 'top 80%',
+      end: 'bottom top',
+      scrub: true,
+      markers: false,
+  }
+});
+
+// 動畫 - skills-tools
+gsap.from('.skills2', {
+  opacity: 0,
+  x: -300,  // 從左邊進入
+  scale: 0.8,
+  duration: 1.2,
+  ease: "power3.out", // 彈跳效果
+  scrollTrigger: {
+      trigger: '.skills2',
+      start: 'top 80%',
+      end: 'bottom top',
+      scrub: true,
+      markers: false,
+  }
+});
+
+// 動畫 - timeline
+gsap.from('.experience2', {
+  opacity: 0,
+  x: 300,  // 從右邊進入
+  scale: 0.8,
+  duration: 1.2,
+  ease: "power3.out", // 彈跳效果
+  scrollTrigger: {
+      trigger: '.experience2',
+      start: 'top 80%',
+      end: 'bottom top',
+      scrub: true,
+      markers: false,
+  }
+});
+
+gsap.from('.what', {
+  opacity: 0,
+  x: 100,  // 初始從右側進場
+  rotation: 10,  // 輕微旋轉，讓元素看起來更有動感
+  duration: 1.5,
+  ease: "power3.out",  // 平滑進場效果
+  scrollTrigger: {
+      trigger: '.what',
+      start: 'top 80%',
+      end: 'bottom top',
+      scrub: true,
+      markers: false,
+  }
+});
+
+
+
 
 // Video Controls
 (() => {
@@ -323,3 +483,29 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".contact-in-title", {
+      opacity: 0,
+      y: -50,
+      duration: 1,
+      ease: "power2.out",
+      scrollTrigger: {
+          trigger: ".contact-section",
+          start: "top 80%",
+      }
+  });
+
+  gsap.from(".contact-form label, .contact-form input, .contact-form textarea, .form-bt", {
+      opacity: 0,
+      y: 30,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power2.out",
+      scrollTrigger: {
+          trigger: ".contact-form",
+          start: "top 85%",
+      }
+  });
+});

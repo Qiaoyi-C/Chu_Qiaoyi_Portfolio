@@ -10,28 +10,31 @@
 .case-study h2 {
     text-align: center;
     color: #6C3205;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
     padding: 24px;
 }
 
-.created-dat{
-    margin-top: 40px;
-    color: #6C3205;
-    font-size: 14px;
+
+.project-images img{
+    border-radius: 20px;
 }
 
-.background, .created-date, .problem, .description, .categories, .solution {
-    margin-bottom: 20px;
+.background,.project-images, .created-date, .problem, .description, .categories, .solution {
+    margin-bottom: 24px;
     color: #6C3205;
+}
+
+.created-date, .categories{
+    margin-top: 30px;
 }
 
 .case-study h3{
     position: relative;
+    font-size: 24px;
 }
 
 .case-study h3::before {
-    content: ""; 
     display: inline-block; 
     width: 10px; 
     height: 10px; 
@@ -42,14 +45,28 @@
 }
 
 .case-study p {
-  line-height: 28px;
-  font-size: 16px;
+  line-height: 30px;
+  font-size: 18px;
 }
 
-.images img {
-    margin: 20px;
-   text-align: center;
-   border-radius: 20px;
+.study-p{
+    color: #000;
+    margin-top: 20px;
+   
+}
+
+.description, .problem, .solution{
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.problem{
+    background-color: #ffe7dd;
+}
+
+.solution{
+    background-color: #f6e4d2;
 }
 
 .video-container {
@@ -77,3 +94,21 @@
     width: 70%;
     border: solid #FFF;
 }
+
+@media screen and (min-width: 1200px) { 
+    .lot-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem; /* 圖片之間的間距 */
+    }
+    
+    .lot-images img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px; /* 可有可無，增加美觀 */
+    }
+    
+ 
+ 
+ }
