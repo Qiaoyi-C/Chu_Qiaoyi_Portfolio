@@ -6,7 +6,7 @@
 }
 #player-container video {
   width: 100%;
-  height: auto; /* 保持比例 */
+  height: auto; 
 }
 
 .video-controls.hidden {
@@ -14,8 +14,9 @@
 }
 
 video {
-  max-width: 100%; /* 保證視頻寬度不會超過父容器 */
-  margin-top: 30px;
+  max-width: 100%; 
+  margin-top: 50px;
+  border-radius: 30px;
 }
 
 .video-controls {
@@ -25,8 +26,9 @@ video {
     position: absolute;
     bottom: 0px;
     transition: all 0.2s ease;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.399));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.772), rgba(255, 255, 255, 0.913));
     display: flex;
+    border-radius: 0px 0px 30px 30px;
   }
   
   .video-controls.hide {
@@ -41,7 +43,7 @@ video {
   }
 
   .fa, .fa-solid {
-    color: #ffffff;
+    color: #936041;
     font-size: 28px;
     margin-left: 20px;
   } 
@@ -77,7 +79,7 @@ input[type="range"] {
   /******** Chrome, Safari, Opera and Edge Chromium styles ********/
   /* slider track */
   input[type="range"]::-webkit-slider-runnable-track {
-    background-color: #ffffff;
+    background-color: #C5896F;
     border-radius: 0.5rem;
     height: 0.5rem;
   }
@@ -87,7 +89,7 @@ input[type="range"] {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
     margin-top: -4px; /* Centers thumb on the track */
-    background-color: #808080;
+    background-color: #936041;
     border-radius: 0.5rem;
     height: 1rem;
     width: 1rem;

@@ -1,6 +1,7 @@
 
 .contact-section {
     background-color: #FBF5EE;
+    padding-bottom: 50px;
 }
 
 .contact-in-title{
@@ -19,9 +20,10 @@
     flex-direction: column;
     gap: 1rem;
     border-radius: 30px;
-    color: #FFF9F4;
+    color: #FBF5EE;
     font-weight: bold;
     margin-bottom: 48px;
+    background-color: #F6E4D2;
   }
   
   .contact-form label {
@@ -34,10 +36,9 @@
   .contact-form textarea {
     width: 100%;
     padding: 0.5rem;
-
     border: 1px solid #FFF9F4;
     border-radius: 30px;
-    background-color: #FFF9F4;
+    background-color: #ffffff;
     font-size: 14px;
 
   }
@@ -60,14 +61,14 @@
   }
   
   .modal {
-    display: none; /* 初始隱藏 */
+    display: none; 
     position: fixed;
-    z-index: 1; /* 確保顯示在最上層 */
+    z-index: 1; 
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* 背景半透明 */
+    background-color: rgba(0, 0, 0, 0.4); 
 }
 
 .modal-content {

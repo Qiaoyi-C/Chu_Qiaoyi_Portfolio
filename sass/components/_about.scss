@@ -1,6 +1,6 @@
 .about-bk{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .about {
     background: #FBF5EE;
@@ -51,7 +51,7 @@
     margin-top: 15px;
 }
 
-/* Experience 區塊 */
+/* Experience  */
 .experience {
     background: #F6E4D2;
     padding: 20px;
@@ -98,12 +98,13 @@
     color: #7a573c;
 }
 
-/* Skills 區塊 */
+/* Skills */
 .skills {
     background: #FFE7DD;
     padding: 20px;
     border-radius: 30px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .skills h2 {

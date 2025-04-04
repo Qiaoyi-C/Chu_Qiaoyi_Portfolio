@@ -58,23 +58,29 @@ try {
     </div>
     <div class="hero-bk">
         <section class="grid-con hero">
-            <div class="col-span-full m-col-span-full l-col-span-full">
+            <div class="col-span-full m-col-span-full l-col-start-1 l-col-end-7">
                 <h1 class="hero-h1">Hello, I'm <span class="highlight">Joy</span></h1>
-                <p class="hero-p">I'm a UI/UX & Graphic Designer</p>
+                <p class="hero-p">UI/UX & Graphic Designer</p>
+                <p class="hero-p2">My strength lies in translating complex challenges into clear, user-centric design solutions that elevate both user experience and brand identity.</p>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/qiao-yi-chu-978721199/" target="_blank">
-                        <img src="images/LinkedIn.svg" class="hero-icon" alt="linkedin icon">
-                    </a>
-                    <a href="https://github.com/Qiaoyi-C" target="_blank">
-                        <img src="images/Github.svg" class="hero-icon" alt="github icon">
-                    </a>
-                    <a href="https://dribbble.com/joychu" target="_blank">
-                        <img src="images/Dribbble.svg" class="hero-icon" alt="dribbble icon">
-                    </a>
+                    
+                        <a href="https://www.linkedin.com/in/qiao-yi-chu-978721199/" target="_blank">
+                            <img src="images/LinkedIn.svg" class="hero-icon" alt="linkedin icon">
+                        </a>
+                        <a href="https://github.com/Qiaoyi-C" target="_blank">
+                            <img src="images/Github.svg" class="hero-icon" alt="github icon">
+                        </a>
+                        <a href="https://dribbble.com/joychu" target="_blank">
+                            <img src="images/Dribbble.svg" class="hero-icon" alt="dribbble icon">
+                        </a>
+
+                    <div class="hire-con ">
+                        <a href="#contact" class="button-hire">Hire Me</a>
+                    </div>
                 </div>
 
             <div class="hero-image">
-                <img src="images/hero 2.png" alt="Joy Chu">
+                <img src="images/hero.png" alt="Joy Chu">
             </div>
         </section>
     </div>
@@ -228,6 +234,45 @@ try {
 </section>
 
     </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+
+    <h1 class="contact-in-title col-span-full ">Contact</h1>
+    <div class="grid-con contact-all">
+
+    <div class="contact-out col-span-full l-col-start-3 l-col-end-11">
+        <form class="contact-form" action="process_contact.php" method="POST">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" placeholder="First Name" >
+    
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" placeholder="Last Name" >
+    
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" placeholder="Phone" >
+    
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="E-mail">
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Message" ></textarea>
+    
+            <div class="form-bt">
+                <button type="submit" class="button-link">Send</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Thank you for your message. We will get back to you shortly!</p>
+        </div>
+    </div>
+
+</div>
+</section>
 
     
     
