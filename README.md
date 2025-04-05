@@ -2,6 +2,7 @@
 
 # Welcome to My Portfolio Repository! 🎨
 Hello! I'm Joy Chu, a UI/UX designer passionate about crafting intuitive and visually compelling digital experiences. This portfolio showcases my journey in creating user-centered designs, prototyping, and problem-solving to elevate user satisfaction.
+https://joychudesign.com/
 
 ## Table of Contents 📋
 About
