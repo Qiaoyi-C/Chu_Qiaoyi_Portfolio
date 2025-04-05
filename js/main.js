@@ -310,8 +310,8 @@ gsap.from('.skill-item', {
   stagger: 0.2,
   scrollTrigger: {
       trigger: '.skill-item',
-      start: 'top 80%',
-      end: 'bottom top',
+      start: 'top 100%',
+      end: 'bottom 80%',
       scrub: true,
       markers: false,
   }
@@ -357,7 +357,7 @@ gsap.from('.what', {
   ease: "power3.out",  // 平滑進場效果
   scrollTrigger: {
       trigger: '.what',
-      start: 'top 80%',
+      start: 'top 70%',
       end: 'bottom top',
       scrub: true,
       markers: false,

@@ -103,7 +103,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 <div class="pro-video col-span-full">
                 <?php if (!empty($project['video'])): ?>
                     <div class="video-container">
-                        <iframe src="video/<?php echo htmlspecialchars($project['video']); ?>" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="video/<?php echo htmlspecialchars($project['video']); ?>?autoplay=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                 <?php else: ?>
                     <p><?php echo nl2br(htmlspecialchars($project['video'])); ?></p>
@@ -144,7 +144,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 <ul>
                     <li><a href="portfolio.php">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.php#contact">Contact</a></li>
                 </ul>
             </nav>
 

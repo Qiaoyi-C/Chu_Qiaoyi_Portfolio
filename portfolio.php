@@ -119,7 +119,7 @@ try {
                     <ul>
                         <li><a href="portfolio.php">Portfolio</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.php#contact">Contact</a></li>
                     </ul>
                 </nav>
 
